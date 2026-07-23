@@ -1,0 +1,18 @@
+h1{
+    color: red;
+    text-align: center;
+    text-decoration: dashed;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse:collapse ;
+}
+body{
+    background-color: aqua;
+}
+h4{
+    text-align: center;
+}
+p{
+    background-image: url(sandhya.jpg);
+}

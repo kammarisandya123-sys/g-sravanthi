@@ -1,0 +1,26 @@
+h1{
+    color: blueviolet;
+    text-align:start;
+    text-decoration: blue underline;
+    font-weight: normal;
+
+}
+body{
+    background-color:mediumturquoise;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+h2{
+    color: chocolate;
+}
+ol{
+    background-color: aquamarine;
+}
+body{
+    background-image: url("sandhya.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment:scroll;
+}
