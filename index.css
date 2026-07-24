@@ -1,0 +1,15 @@
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    text-align: center;
+    line-height: 100px;
+}
+``

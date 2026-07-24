@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5501/new/feedback.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<body style="
+    background-color: beige;
+">
+    <from>
+    <h1 style="
+    color: brown;
+">feedback form</h1>
+    <input type="text" placeholder="enter your name" style="
+    background-color: beige;
+">
+    <br>
+    <input type="text" placeholder=" enter your email" style="
+    background-color: bisque;
+">
+    <br>
+    <input type="password" placeholder="password" style="
+    background-color: blanchedalmond;
+">
+    <br>
+    <h3 style="
+    color: brown;
+">choose your class</h3>
+    <lable for="101">
+        <input type="radio" value="class 3" name="class" id="101">class 3
+    </lable>
+        <br>
+        <lable for="102">
+        <input type="radio" value="class 4" name="class" id="102">class 4
+        </lable>
+        <br>
+        <lable for="103">
+        <input type="radio" value="class 5" name="class" id="103">class 5
+        </lable>
+        <br>
+        <lable for="104">
+        <input type="radio" value="class 6" name="class" id="104">class 6
+        </lable>
+        <br>
+
+     
+    <h3 style="
+    color: brown;
+">choose your fav subject</h3>
+    <lable for="math">
+        <input type="radio" value="math" name="subject">math
+        <br>
+         <input type="radio" value="english" name="subject">english
+         <br>
+          <input type="radio" value="hindi" name="subject">hindi
+          <br>
+           <input type="radio" value="science" name="subject">science
+           <br>
+            <input type="radio" value="telugu" name="subject">telugu
+    </lable>
+    <select <="" html="">
+</select></from></body></html>
